@@ -14,7 +14,7 @@ into integers using built-in functions (like atoi).
 you must process the strings digit by digit, 
 simulating how you would add numbers on paper.
 [num1= "123456", num2="67889" , Expected Output: 80234] 
-, [num1= "999", num2="1" , Expected Output: 1], 
+, [num1= "999", num2="1" , Expected Output: 1000], 
 [num1= "0", num2="0" , Expected Output: 0]
 */
 #include <stdio.h>
