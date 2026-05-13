@@ -11,7 +11,6 @@ as a floating point number.
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
-#include <ctype.h>
 
 int main(){
     char f_string[100];
@@ -22,7 +21,8 @@ int main(){
     bool is_number = true; 
 
     for (int i = 0; i < n; i++) {
-        if(isalpha(f_string[i])) {
+        if(f_string[i] == '.') is_number = true;
+        else if(!(f_string[i] >= '0' && f_string[i] <= '9')) {
             is_number = false;
             break;
         }
