@@ -49,8 +49,8 @@ a custom solution. You are tasked with writing a
 */
 
 int main(){
-  char num1[100] = "12345678901234567890";
-  char num2[100] = "12345678901234567890";
+  char num1[100] = "120";
+  char num2[100] = "1";
   char result[101];
   
   int len1 = strlen(num1);
@@ -72,6 +72,8 @@ int main(){
     if(y>x){
       x = 10 + x;
       carry = 1;
+    } else {
+      carry = 0;
     }
     
     int sum = x - y;
