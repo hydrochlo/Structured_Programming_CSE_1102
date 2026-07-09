@@ -46,7 +46,8 @@ int isLoop(struct Node *f){
     
     do{
         p = p->next;
-        q = q->next;
+        q = q->next ? q->next->next: q->next;
+        // q = q->next;
         q = (q ? q->next: q);
     } while(p && q && p!=q);
     if(p==q) return 1;
@@ -56,12 +57,12 @@ int isLoop(struct Node *f){
 int main(){
     struct Node *t1, *t2;
 
-    int A[5] = {10, 20, 30, 40, 50};
-    create(A, 5);
+    int A[6] = {10, 20, 30, 40, 50, 60};
+    create(A, 6);
 
-    t1 = first->next->next;
-    t2 = first->next->next->next->next;
-    t2->next = t1;
+    // t1 = first->next->next;
+    // t2 = first->next->next->next->next;
+    // t2->next = t1;
 
     printf("%d\n", isLoop(first));
     return 0;
