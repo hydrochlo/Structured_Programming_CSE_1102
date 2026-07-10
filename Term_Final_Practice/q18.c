@@ -21,13 +21,13 @@ int main() {
     double k = check(x1, y1, x3, y3);
 
     if(i<j && i<k){
-        printf("Shortest Distance %lf", i);
+        printf("Shortest Distance = %lf", i);
     } else if(j<k && j<i){
-        printf("Shortest Distance %lf", j);
+        printf("Shortest Distance = %lf", j);
     } else{
-        printf("Shortest Distance %lf", k);
+        printf("Shortest Distance = %lf", k);
     }
 
    return 0;
-   
+
 }
